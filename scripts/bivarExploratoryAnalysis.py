@@ -11,8 +11,18 @@ import matplotlib.pyplot as plt
 
 
 set = pd.read_csv("C:\\Users\\r.lazcano.pello\\Desktop\\Documentos no relacionados con el proyecto\\Python\\Titanico\data\\train.csv")
-
+sortedAge = set.sort_values('Age')
+indice = np.arange(891)
+plt.scatter(indice,sortedAge.Age)
 #Edad
+ageFlag = sortedAge.Age[1]
+for x in range(1,30):
+    if sortedAge.Age[x]==ageFlag:
+        print("mismo que antes")
+    else:
+        print('cambiamos')
+
+
 
 plt.scatter(x= set['Age'],y = set['Survived'],alpha=0.1)
 
