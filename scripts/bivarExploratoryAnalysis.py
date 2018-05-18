@@ -15,13 +15,17 @@ sortedAge = set.sort_values('Age')
 indice = np.arange(891)
 plt.scatter(indice,sortedAge.Age)
 #Edad
-ageFlag = sortedAge.Age[1]
-for x in range(1,30):
-    if sortedAge.Age[x]==ageFlag:
-        print("mismo que antes")
+sortedAges  = sortedAge.Age.values
+sortedSurvival = sortedAge.Survived.values
+ageFlag = 0.5
+for x in range(0,891):
+    if sortedAges[x]==ageFlag:
+        print("mismo que antes",)
+        ageFlag=sortedAges[x]
     else:
-        print('cambiamos')
 
+        print('cambiamos')
+        ageFlag = sortedAges[x]
 
 
 plt.scatter(x= set['Age'],y = set['Survived'],alpha=0.1)
