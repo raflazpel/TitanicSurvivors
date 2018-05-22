@@ -10,21 +10,53 @@ import matplotlib.pyplot as plt
 
 
 
-set = pd.read_csv("C:\\Users\\r.lazcano.pello\\Desktop\\Documentos no relacionados con el proyecto\\Python\\Titanico\data\\train.csv")
-sortedAge = set.sort_values('Age')
-indice = np.arange(891)
-plt.scatter(indice,sortedAge.Age)
+set = pd.read_csv("C:\\Users\\r.lazcano.pello\\Desktop\\Documentos no relacionados con el proyecto\\Python\\TitanicSurvivors\\scripts\\cleanTrainingSet.csv")
+
+
 #Edad
+#Para analizar la relacion entre edad y supervicencia vamos a representar el porcentaje de supervivientes para cada edad.
+#Para ello reordenamos el set por edad. Los mas jovenes primero.
+sortedAge = set.sort_values('Age')
 sortedAges  = sortedAge.Age.values
 sortedSurvival = sortedAge.Survived.values
+
+# Definir vectores de edad y porcenajes de supervivencia
+
+edades = np.array(sortedAges[0])
+porcentajeSuper = np.array(sortedSurvival[0])
+
+#Definir bandera de edad y comprobar si ha cambiado:
+
 ageFlag = 0.5
-for x in range(0,891):
+n=1
+s=1
+for x in range(1,713):
+    if sortedAges[x]!=ageFlag:
+        edades = np.append(edades, sortedAges[x-1])
+        porcentajeSuper = np.append(porcentajeSuper, (n/s)*100)
+        n=1
+        s=sortedSurvival[x]
+        ageFlag= sortedAges[x+1]
+    else:
+        n=n+1
+        s=s+sortedSurvival[x]
+        ageFlag = sortedAges[x + 1]
+
+
+
+
+finalList=[]
+for x in range(0,713):
     if sortedAges[x]==ageFlag:
+
+        currentList.extend(sortedSurvival[x])
         print("mismo que antes",)
         ageFlag=sortedAges[x]
     else:
-
+        currentList = []
+        currentList.extend(sortedSurvival[x])
         print('cambiamos')
+
         ageFlag = sortedAges[x]
 
 
