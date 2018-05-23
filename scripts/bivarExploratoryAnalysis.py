@@ -22,26 +22,28 @@ sortedSurvival = sortedAge.Survived.values
 
 # Definir vectores de edad y porcenajes de supervivencia
 
-edades = np.array(sortedAges[0])
-porcentajeSuper = np.array(sortedSurvival[0])
+edades = np.array([])
+porcentajeSuper = np.array([])
 
 #Definir bandera de edad y comprobar si ha cambiado:
 
-ageFlag = 0.5
-n=1
-s=1
-for x in range(1,713):
-    if sortedAges[x]!=ageFlag:
-        edades = np.append(edades, sortedAges[x-1])
-        porcentajeSuper = np.append(porcentajeSuper, (n/s)*100)
-        n=1
-        s=sortedSurvival[x]
-        ageFlag= sortedAges[x+1]
+
+n=0
+s=0
+
+for x,i in enumerate(sortedAges):
+    if sortedAges[x] != sortedAges[x+1]:
+        edades = np.append(edades, i)
+        s = s + sortedSurvival[x]
+        n = n +1
+
+        porcentajeSuper = np.append(porcentajeSuper, (s/n)*100)
+        s= 0
+        n=0
+
     else:
         n=n+1
         s=s+sortedSurvival[x]
-        ageFlag = sortedAges[x + 1]
-
 
 
 
