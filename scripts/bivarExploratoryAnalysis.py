@@ -13,63 +13,70 @@ import matplotlib.pyplot as plt
 set = pd.read_csv("C:\\Users\\r.lazcano.pello\\Desktop\\Documentos no relacionados con el proyecto\\Python\\TitanicSurvivors\\Data\\cleanTrainingSet.csv")
 
 
-#Edad
-#Para analizar la relacion entre edad y supervicencia vamos a representar el porcentaje de supervivientes para cada edad.
-#Para ello reordenamos el set por edad. Los mas jovenes primero.
-sortedAge = set.sort_values('Age')
-sortedAges  = sortedAge.Age.values
-sortedSurvival = sortedAge.Survived.values
+# 1 Edad
 
-# Definir vectores de edad y porcenajes de supervivencia
+# 1.1 Histograma combinado edad-surpervivencia
+pd.crosstab(set.Age,set.Survived).plot(kind='bar')
+plt.savefig('pur_fre_month_bar')
 
-edades = np.array([])
-porcentajeSuper = np.array([])
-
-
-#Definir bandera de edad y comprobar si ha cambiado:
-
-
-n=0
-s=0
-
-for x,i in enumerate(sortedAges):
-
-    if x == 712:
-        break
-    if sortedAges[x] != sortedAges[x+1]:
-        edades = np.append(edades, i)
-        s = s + sortedSurvival[x]
-        n = n +1
-
-        porcentajeSuper = np.append(porcentajeSuper, (s/n)*100)
-        s= 0
-        n=0
-
-    else:
-        n=n+1
-        s=s+sortedSurvival[x]
-
-print(edades)
-print(porcentajeSuper)
-
-plt.scatter(edades,porcentajeSuper)
-plt.show()
-finalList=[]
-for x in range(0,713):
-    if sortedAges[x]==ageFlag:
-
-        currentList.extend(sortedSurvival[x])
-        print("mismo que antes",)
-        ageFlag=sortedAges[x]
-    else:
-        currentList = []
-        currentList.extend(sortedSurvival[x])
-        print('cambiamos')
-
-        ageFlag = sortedAges[x]
-
-
-plt.scatter(x= set['Age'],y = set['Survived'],alpha=0.1)
+# #Para analizar la relacion entre edad y supervicencia vamos a representar el porcentaje de supervivientes para cada
+#  edad. Para ello reordenamos el set por edad. Los mas jovenes primero. (Este bloque no funcionaba bien, lo he
+# sustituido por el histograma anterior.
+# sortedAge = set.sort_values('Age')
+# sortedAges  = sortedAge.Age.values
+# sortedSurvival = sortedAge.Survived.values
+#
+# # Definir vectores de edad y porcenajes de supervivencia
+#
+# edades = np.array([])
+# porcentajeSuper = np.array([])
+#
+#
+# #Definir bandera de edad y comprobar si ha cambiado:
+#
+#
+# n=0
+# s=0
+#
+# for x,i in enumerate(sortedAges):
+#
+#     if x == 712:
+#         break
+#     if sortedAges[x] != sortedAges[x+1]:
+#         edades = np.append(edades, i)
+#         s = s + sortedSurvival[x]
+#         n = n +1
+#
+#         porcentajeSuper = np.append(porcentajeSuper, (s/n)*100)
+#         s= 0
+#         n=0
+#
+#     else:
+#         n=n+1
+#         s=s+sortedSurvival[x]
+#
+# print(edades)
+# print(porcentajeSuper)
+#
+# plt.scatter(edades,porcentajeSuper)
+# plt.figure(2)
+# finalList=[]
+#
+# for x in range(0,713):
+#     if sortedAges[x]==ageFlag:
+#
+#         currentList.extend(sortedSurvival[x])
+#         print("mismo que antes",)
+#         ageFlag=sortedAges[x]
+#     else:
+#         currentList = []
+#         currentList.extend(sortedSurvival[x])
+#         print('cambiamos')
+#
+#         ageFlag = sortedAges[x]
+#
+#
+# plt.scatter(x= set['Age'],y = set['Survived'],alpha=0.1)
 
 
 #Clase

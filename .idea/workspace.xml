@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/scripts/model.py" line="35" mnemonic="7" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="caa6c430-5d6a-4d58-8b37-54072858b5a0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/bivarExploratoryAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/bivarExploratoryAnalysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/monovariableAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/monovariableAnalysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/model.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,19 +18,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/test.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="102" selection-start-line="15" selection-start-column="102" selection-end-line="15" selection-end-column="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="downloadData.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/downloadData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="335">
               <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
@@ -37,7 +30,7 @@
       <file leaf-file-name="cleaningData.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/cleaningData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="-311">
               <caret line="10" column="138" selection-start-line="10" selection-start-column="114" selection-end-line="10" selection-end-column="138" />
             </state>
           </provider>
@@ -46,20 +39,8 @@
       <file leaf-file-name="monovariableAnalysis.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/monovariableAnalysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bivarExploratoryAnalysis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/bivarExploratoryAnalysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="212" lean-forward="true" selection-start-line="212" selection-end-line="212" />
+            <state relative-caret-position="221">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -69,12 +50,14 @@
       </file>
       <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/model.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="cleanTrainingSet.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/cleanTrainingSet.csv">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="pydevd.py" pinned="false" current-in-tab="false">
@@ -109,6 +92,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ageF</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -120,10 +108,11 @@
         <option value="$PROJECT_DIR$/scripts/cleaningData.py" />
         <option value="$PROJECT_DIR$/scripts/monovariableAnalysis.py" />
         <option value="$PROJECT_DIR$/scripts/bivarExploratoryAnalysis.py" />
+        <option value="$PROJECT_DIR$/scripts/model.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="233" />
     <option name="y" value="169" />
     <option name="width" value="1200" />
@@ -182,7 +171,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bivarExploratoryAnalysis">
+  <component name="RunManager" selected="Python.model">
     <configuration name="bivarExploratoryAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TitanicSurvivors" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -237,6 +226,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TitanicSurvivors" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="monovariableAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TitanicSurvivors" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -260,9 +267,11 @@
       <item itemvalue="Python.downloadData" />
       <item itemvalue="Python.cleaningData" />
       <item itemvalue="Python.bivarExploratoryAnalysis" />
+      <item itemvalue="Python.model" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.model" />
         <item itemvalue="Python.bivarExploratoryAnalysis" />
         <item itemvalue="Python.monovariableAnalysis" />
         <item itemvalue="Python.cleaningData" />
@@ -309,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526646063808</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added model class">
+      <created>1529310269180</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1529310269180</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -322,19 +338,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="233" y="169" width="1200" height="676" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26013514" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1925" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32916668" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5025338" side_tool="true" visible="true" weight="0.399287" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.193125" side_tool="true" visible="true" weight="0.54931337" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32916668" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4881757" weight="0.3262032" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8116554" weight="0.3957219" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.485625" weight="0.3258427" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.806875" visible="true" weight="0.54931337" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32916668" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4974662" visible="true" weight="0.399287" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49625" weight="0.3982522" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -375,7 +391,8 @@
     <MESSAGE value="First Commit: Data Importation and Basic Exploratory Analysis" />
     <MESSAGE value="First Commit: Data Importation and Basic Exploratory Analysis 2" />
     <MESSAGE value="First Commit: Data Importation and Basic Exploratory Analysis 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit: Data Importation and Basic Exploratory Analysis 3" />
+    <MESSAGE value="Added model class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added model class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -386,32 +403,20 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scripts/bivarExploratoryAnalysis.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/scripts/model.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scripts/model.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/bivarExploratoryAnalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/gender_submission.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/test.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -644,20 +649,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/test.py" />
-    <entry file="file://$PROJECT_DIR$/scripts/downloadData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/cleaningData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="138" selection-start-line="10" selection-start-column="114" selection-end-line="10" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18139">
@@ -672,31 +663,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/downloadData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/cleaningData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-311">
+          <caret line="10" column="138" selection-start-line="10" selection-start-column="114" selection-end-line="10" selection-end-column="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/pur_fre_month_bar.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Data/cleanTrainingSet.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/monovariableAnalysis.py">
+    <entry file="file://$PROJECT_DIR$/scripts/bivarExploratoryAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="-240">
+          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/bivarExploratoryAnalysis.py">
+    <entry file="file://$PROJECT_DIR$/scripts/monovariableAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="212" lean-forward="true" selection-start-line="212" selection-end-line="212" />
+        <state relative-caret-position="221">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="319" selection-start-line="319" selection-end-line="319" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/model.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
