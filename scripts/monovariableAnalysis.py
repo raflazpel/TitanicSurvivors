@@ -4,13 +4,16 @@ import matplotlib.pyplot as plt
 
 # Store training and tests sets
 testSet = pd.read_csv("C:\\Users\\r.lazcano.pello\\Desktop\\Documentos no relacionados con el proyecto\\Python\\Titanico\\data\\test.csv")
-trainingSet = pd.read_csv("C:\\Users\\r.lazcano.pello\\Desktop\\Documentos no relacionados con el proyecto\\Python\\TitanicSurvivors\\scripts\\cleanTrainingSet.csv")
+trainingSet = pd.read_csv("C:\\Users\\r.lazcano.pello\\Desktop\\Documentos no relacionados con el proyecto\\Python\\TitanicSurvivors\\Data\\cleanTrainingSet.csv")
 
 # Individual analysis of variables.
 # We suppose PassengerId is arbitrary and thus, not relevant.
 
 #Survive : El objetivo de nuestro estudio. Es una variable binaria.
 survived =  np.array(trainingSet.Survived)
+median = trainingSet.Survived.median()
+mean = trainingSet.Survived.mean()
+std = trainingSet.Survived.std()
 plt.figure(1)
 plt.subplot(211)
 plt.hist(survived,density=True,bins=[-0.5,0.5,0.5,1.5],histtype ='step')

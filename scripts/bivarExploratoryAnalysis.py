@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 
 
-set = pd.read_csv("C:\\Users\\r.lazcano.pello\\Desktop\\Documentos no relacionados con el proyecto\\Python\\TitanicSurvivors\\scripts\\cleanTrainingSet.csv")
+set = pd.read_csv("C:\\Users\\r.lazcano.pello\\Desktop\\Documentos no relacionados con el proyecto\\Python\\TitanicSurvivors\\Data\\cleanTrainingSet.csv")
 
 
 #Edad
@@ -25,6 +25,7 @@ sortedSurvival = sortedAge.Survived.values
 edades = np.array([])
 porcentajeSuper = np.array([])
 
+
 #Definir bandera de edad y comprobar si ha cambiado:
 
 
@@ -32,6 +33,9 @@ n=0
 s=0
 
 for x,i in enumerate(sortedAges):
+
+    if x == 712:
+        break
     if sortedAges[x] != sortedAges[x+1]:
         edades = np.append(edades, i)
         s = s + sortedSurvival[x]
@@ -45,8 +49,11 @@ for x,i in enumerate(sortedAges):
         n=n+1
         s=s+sortedSurvival[x]
 
+print(edades)
+print(porcentajeSuper)
 
-
+plt.scatter(edades,porcentajeSuper)
+plt.show()
 finalList=[]
 for x in range(0,713):
     if sortedAges[x]==ageFlag:
